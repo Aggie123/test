@@ -12,16 +12,6 @@ export default class extends Component {
       <Layout style={{height:'100%',width:'100%'}}>
         <Header className="header">
           <div className="logo">小驴</div>
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            defaultSelectedKeys={['2']}
-            style={{ lineHeight: '64px' }}
-          >
-            <Menu.Item key="1">导航 1</Menu.Item>
-            <Menu.Item key="2">导航 2</Menu.Item>
-            <Menu.Item key="3">导航 3</Menu.Item>
-          </Menu>
         </Header>
         <Layout style={{height:'100%'}}>
           <Sider width={200}>
