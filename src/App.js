@@ -9,9 +9,9 @@ import './App.css';
 export default class extends Component {
   render(){
     return (
-      <Layout>
+      <Layout style={{height:'100%',width:'100%'}}>
         <Header className="header">
-          <div className="logo" />
+          <div className="logo">小驴</div>
           <Menu
             theme="dark"
             mode="horizontal"
@@ -24,10 +24,10 @@ export default class extends Component {
           </Menu>
         </Header>
         <Layout style={{height:'100%'}}>
-          <Sider width={200} style={{ background: '#fff' }}>
+          <Sider width={200}>
             <Menu
               mode="inline"
-              // theme="dark"
+              theme="dark"
               defaultSelectedKeys={['1']}
               defaultOpenKeys={['sub1']}
               style={{ height: '100%', borderRight: 0 }}
@@ -37,6 +37,8 @@ export default class extends Component {
                 <Menu.Item key="2"><Link to='/order-new'>新增工单</Link></Menu.Item>
               </SubMenu>
               <SubMenu key="sub2" title={<span><Icon type="laptop" />业务2</span>}>
+                <Menu.Item key="3">option3</Menu.Item>
+                <Menu.Item key="4">option4</Menu.Item>
                 <Menu.Item key="5">option5</Menu.Item>
                 <Menu.Item key="6">option6</Menu.Item>
                 <Menu.Item key="7">option7</Menu.Item>
