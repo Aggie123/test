@@ -11,7 +11,7 @@ export default class extends Component {
     return (
       <Layout style={{height:'100%',width:'100%'}}>
         <Header className="header">
-          <div className="logo">小驴</div>
+          <div className="logo">Donkey</div>
         </Header>
         <Layout style={{height:'100%'}}>
           <Sider width={200}>
@@ -50,7 +50,7 @@ export default class extends Component {
         </Layout>
         <Footer>
           <div className="footer">
-            <p>欢迎使用小驴</p>
+            <p>欢迎使用</p>
           </div>
         </Footer>
       </Layout>
